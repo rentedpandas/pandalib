@@ -13,7 +13,10 @@ data class PSound(
     var pitch: Float = 1f,
     var category: SoundCategory? = null
 ) {
-
+    /**
+     * Plays a sound at a given location.
+     * @param location Location of where the sound should be played.
+     */
     fun playLoc(location: Location) {
         val cat = category
         if (cat != null)
@@ -22,6 +25,10 @@ data class PSound(
             location.worldEx.playSound(location, sound, volume, pitch)
     }
 
+    /**
+     * Plays a sound at a player's location.
+     * @param player Get the online player's location and play a sound.
+     */
     fun playPlayer(player: Player) {
         val cat = category
         if (cat != null)
@@ -31,9 +38,19 @@ data class PSound(
     }
 }
 
+/**
+ * Sound builder tool
+ */
 fun sound(sound: Sound, builder: PSound.() -> Unit) = PSound(sound).apply(builder)
+
+/**
+ * @see sound
+ */
 fun Location.sound(sound: Sound, builder: (PSound.() -> Unit)? = null) =
     PSound(sound).applyIfNotNull(builder).playLoc(this)
 
+/**
+ * @see sound
+ */
 fun Player.sound(sound: Sound, builder: (PSound.() -> Unit)? = null) =
     PSound(sound).applyIfNotNull(builder).playPlayer(this)
