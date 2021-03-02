@@ -2,6 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.4.31"
+    `maven-publish`
+    signing
 }
 
 group = "com.github.rentedpandas"
@@ -26,4 +28,51 @@ tasks.test {
 
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+publishing {
+
+    publications {
+        create<MavenPublication>(project.name) {
+
+            from(components["java"])
+
+            this.groupId = project.group.toString()
+            this.artifactId = project.name.toLowerCase()
+            this.version = project.version.toString()
+
+            pom {
+
+                name.set(project.name)
+                description.set(project.description)
+
+                developers {
+                    developer {
+                        name.set("bluefireoly")
+                    }
+                }
+
+                licenses {
+                    license {
+                        name.set("The Apache License, Version 2.0")
+                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                    }
+                }
+
+                url.set("https://github.com/rentedpandas/pandalib")
+
+                scm {
+                    connection.set("scm:git:git://github.com/rentedpandas/pandalib.git")
+                    url.set("https://github.com/rentedpandas/pandalib}/tree/master")
+                }
+
+            }
+
+        }
+    }
+
+}
+
+signing {
+    sign(publishing.publications)
 }
