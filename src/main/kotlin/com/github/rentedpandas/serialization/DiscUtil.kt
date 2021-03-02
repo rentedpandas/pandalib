@@ -1,6 +1,6 @@
-package io.github.rentedpandas.serialization
+package com.github.rentedpandas.serialization
 
-import io.github.rentedpandas.runnable.async
+import com.github.rentedpandas.runnable.async
 import java.io.*
 import java.nio.charset.StandardCharsets
 import java.util.HashMap

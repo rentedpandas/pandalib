@@ -1,4 +1,4 @@
-package io.github.rentedpandas.extensions
+package com.github.rentedpandas.extensions
 
 import org.bukkit.Location
 import org.bukkit.World

@@ -1,4 +1,4 @@
-package io.github.rentedpandas.itemstack
+package com.github.rentedpandas.itemstack
 
 import org.bukkit.Bukkit
 import org.bukkit.Material

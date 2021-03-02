@@ -1,6 +1,6 @@
-package io.github.rentedpandas.extensions
+package com.github.rentedpandas.extensions
 
-import io.github.rentedpandas.plugin.PANDAINSTANCE
+import com.github.rentedpandas.plugin.PANDAINSTANCE
 import org.bukkit.attribute.Attribute
 import org.bukkit.entity.Damageable
 import org.bukkit.entity.LivingEntity

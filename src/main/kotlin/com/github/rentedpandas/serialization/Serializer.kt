@@ -1,6 +1,6 @@
-package io.github.rentedpandas.serialization
+package com.github.rentedpandas.serialization
 
-import io.github.rentedpandas.extensions.pluginDataFolder
+import com.github.rentedpandas.extensions.pluginDataFolder
 import java.io.File
 
 class Serializer {

@@ -1,12 +1,12 @@
-package io.github.rentedpandas.serialization
+package com.github.rentedpandas.serialization
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import io.github.rentedpandas.extensions.pluginDataFolder
-import io.github.rentedpandas.extensions.println
-import io.github.rentedpandas.extensions.warn
-import io.github.rentedpandas.serialization.DiscUtil.readCatch
-import io.github.rentedpandas.serialization.DiscUtil.writeCatch
+import com.github.rentedpandas.extensions.pluginDataFolder
+import com.github.rentedpandas.extensions.println
+import com.github.rentedpandas.extensions.warn
+import com.github.rentedpandas.serialization.DiscUtil.readCatch
+import com.github.rentedpandas.serialization.DiscUtil.writeCatch
 import org.bukkit.Bukkit
 import org.bukkit.command.ConsoleCommandSender
 import java.io.*

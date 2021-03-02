@@ -1,4 +1,4 @@
-package io.github.rentedpandas.plugin
+package com.github.rentedpandas.plugin
 
 import org.bukkit.plugin.java.JavaPlugin
 

@@ -4,7 +4,7 @@ plugins {
     kotlin("jvm") version "1.4.31"
 }
 
-group = "io.github.rentedpandas"
+group = "com.github.rentedpandas"
 version = "1.0"
 description = "Kotlin-based library for Minecraft plugin development. (Using Spigot API)"
 

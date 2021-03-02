@@ -1,7 +1,7 @@
-package io.github.rentedpandas.sound
+package com.github.rentedpandas.sound
 
-import io.github.rentedpandas.extensions.applyIfNotNull
-import io.github.rentedpandas.extensions.worldEx
+import com.github.rentedpandas.extensions.applyIfNotNull
+import com.github.rentedpandas.extensions.worldEx
 import org.bukkit.Location
 import org.bukkit.Sound
 import org.bukkit.SoundCategory

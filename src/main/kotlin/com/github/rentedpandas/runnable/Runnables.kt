@@ -1,6 +1,6 @@
-package io.github.rentedpandas.runnable
+package com.github.rentedpandas.runnable
 
-import io.github.rentedpandas.plugin.PANDAINSTANCE
+import com.github.rentedpandas.plugin.PANDAINSTANCE
 import org.bukkit.Bukkit
 import org.bukkit.scheduler.BukkitRunnable
 

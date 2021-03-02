@@ -1,7 +1,7 @@
-package io.github.rentedpandas.events
+package com.github.rentedpandas.events
 
-import io.github.rentedpandas.extensions.pluginManager
-import io.github.rentedpandas.plugin.PANDAINSTANCE
+import com.github.rentedpandas.extensions.pluginManager
+import com.github.rentedpandas.plugin.PANDAINSTANCE
 import org.bukkit.event.Event
 import org.bukkit.event.EventPriority
 import org.bukkit.event.HandlerList
