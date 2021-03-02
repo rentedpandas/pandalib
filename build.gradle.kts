@@ -30,7 +30,15 @@ tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "1.8"
 }
 
-publishing {
+java.sourceCompatibility = JavaVersion.VERSION_11
+java.targetCompatibility = JavaVersion.VERSION_11
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
+    publishing {
 
     publications {
         create<MavenPublication>(project.name) {
@@ -48,14 +56,7 @@ publishing {
 
                 developers {
                     developer {
-                        name.set("bluefireoly")
-                    }
-                }
-
-                licenses {
-                    license {
-                        name.set("The Apache License, Version 2.0")
-                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                        name.set("rentedpandas")
                     }
                 }
 
